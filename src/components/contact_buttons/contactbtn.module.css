@@ -1,0 +1,9 @@
+.img_container{
+display: flex;
+justify-content: space-around;
+width: 50%;
+}
+
+.img_container>img{
+    width: 40px;
+}

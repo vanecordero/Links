@@ -1,13 +1,13 @@
-import sty from './backgroun.module.css'
-import bgMovil from '../img/bg_mobile.svg'
 import bgDesk from '../img/bg_desktop.svg'
-
+import Home from './home/home';
+import bgMovil from "img/bg_mobile.svg"
 const css = `
 .backimage{
     min-height: 100vh;
     background-image: url(${bgDesk});
     background-repeat:no-repeat;
     background-size: cover;
+    word-break: break-word;
 }
 
 @media (max-width: 992px)  {
@@ -27,7 +27,7 @@ export default function Background() {
         <>
         <style scoped>{css}</style>
         <div className="backimage">
-
+            <Home/>
         </div>
         </>
         
