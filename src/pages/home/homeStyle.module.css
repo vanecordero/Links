@@ -1,0 +1,35 @@
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Principals buttons*/
+.btn_container{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*ISO*/
+.iso{
+    width: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: invert(25%) sepia(18%) saturate(20%) hue-rotate(27deg) brightness(92%) contrast(89%);
+}
+
+@media (max-width: 992px)  {
+    .iso{
+        width: 130px;
+        filter: invert(98%) sepia(91%) saturate(2%) hue-rotate(67deg) brightness(110%) contrast(100%);
+    }
+    
+}
+@media (max-width: 767px) {
+    .iso{
+        width: 82px;
+    }
+    
+}

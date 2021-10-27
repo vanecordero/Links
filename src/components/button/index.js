@@ -2,7 +2,7 @@ import sty from './buttonsStyles.module.css'
 
 export default function Button({onClick, text, styOp,value}) {    
     return ( 
-        <div>
+        <div className={sty.shadow}>
             <button onClick={onClick}
             value={value}
             type="button"

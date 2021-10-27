@@ -1,10 +1,25 @@
-.button{
-    
+
+button{
+    background-color: #ffffff00;
+    width: 322px;
+    height: 91px;
+    border: 2px solid #000;
 }
 
-
-.greenButton{
-
+button::before{
+   content: "Porfolio Web";
+    width: 322px;
+    height: 91px;
+    background-color: tomato;
+    display: flex;
+    position: relative;
+    top:-10px;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+.greenButton{    
+    border: 2px solid #A958FF;
 }
 .pinkButton{
     

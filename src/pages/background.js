@@ -1,4 +1,4 @@
-import bgDesk from '../img/bg_desktop.svg'
+import bgDesk from 'img/bg_desktop.svg'
 import Home from './home/home';
 import bgMovil from "img/bg_mobile.svg"
 const css = `
@@ -8,16 +8,13 @@ const css = `
     background-repeat:no-repeat;
     background-size: cover;
     word-break: break-word;
+    position: relative; 
+    z-index:-11;
 }
 
 @media (max-width: 992px)  {
     .backimage {
         background-image: url(${bgMovil});
-    }
-}
-@media (max-width: 767px) {
-    .backimage {
-        
     }
 }`;
 
