@@ -9,19 +9,19 @@
 }
 .text{
     font-weight: bold;
-    color: #fff;
     text-align: center;
     font-size: 1.5rem;
-}
-.text{
     color: #444444;
+    margin: 0.6rem;
 }
 
-@media (max-width: 992px)  {
-    .text{
-        color: #ffffff;
-    }
-}
 @media (max-width: 767px) {
     /* width: 100px; */
+    .profile_img{
+        width: 55px;
+    }
+    .text{
+        font-size: 1rem;
+    }
+
 }

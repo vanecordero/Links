@@ -9,16 +9,21 @@ width: 20%;
     filter: invert(25%) sepia(18%) saturate(20%) hue-rotate(27deg) brightness(92%) contrast(89%);
 }
 
+
 @media (max-width: 992px)  {
+    .img_container{
+        width: 30%;
+    }
     
     .img_container>img{
-        width: 50px;
-        filter: invert(98%) sepia(91%) saturate(2%) hue-rotate(67deg) brightness(110%) contrast(100%);
+        width: 40px;
     }
 }
 @media (max-width: 767px) {
-    
-.img_container>img{
-    width: 35px;
-}
+    .img_container{
+        width: 40%;
+    }
+    .img_container>img{
+        width: 25px;
+    }
 }

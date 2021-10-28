@@ -1,8 +1,8 @@
-import Profile from "../../components/img_profile";
-import {Links}  from "services/Links";
-import Button from "components/button";
 import { useState } from "react";
-import iso from 'img/iso_white.svg'
+import {Links}  from "services/Links";
+import Profile from "../../components/img_profile";
+import Button from "components/button";
+import Footer from "components/footer";
 import sty from "./homeStyle.module.css"
 
 export default function Home() {
@@ -32,9 +32,10 @@ export default function Home() {
 			}
 			</div>
 			<div>
-				<img src={iso} alt="Logo RVC" className={sty.iso}/>
+				<Footer/>	
 			</div>
+			
 		</div>
-     );
+     )
 }
 

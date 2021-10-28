@@ -6,30 +6,25 @@
 }
 
 /* Principals buttons*/
-.btn_container{
+.btn_container{    
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: space-around;
 }
 
-/*ISO*/
-.iso{
-    width: 60px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    filter: invert(25%) sepia(18%) saturate(20%) hue-rotate(27deg) brightness(92%) contrast(89%);
-}
 
 @media (max-width: 992px)  {
-    .iso{
-        width: 130px;
-        filter: invert(98%) sepia(91%) saturate(2%) hue-rotate(67deg) brightness(110%) contrast(100%);
+    .btn_container{    
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
     
 }
 @media (max-width: 767px) {
-    .iso{
-        width: 82px;
-    }
+   
     
 }
