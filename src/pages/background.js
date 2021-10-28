@@ -2,18 +2,18 @@ import bgDesk from 'img/bg_desktop.svg'
 import Home from './home/home';
 import bgMovil from "img/bg_mobile.svg"
 const css = `
-.backimage{
+body{
     min-height: 100vh;
+    weidth:100%;
     background-image: url(${bgDesk});
     background-repeat:no-repeat;
     background-size: cover;
     word-break: break-word;
-    position: relative; 
-    z-index:-11;
+    position: relative;
 }
 
 @media (max-width: 992px)  {
-    .backimage {
+    body {
         background-image: url(${bgMovil});
     }
 }`;
@@ -22,10 +22,8 @@ const css = `
 export default function Background() {
     return ( 
         <>
-        <style scoped>{css}</style>
-        <div className="backimage">
+            <style scoped>{css}</style>
             <Home/>
-        </div>
         </>
         
      );

@@ -1,30 +1,61 @@
 
-button{
-    background-color: #ffffff00;
-    width: 322px;
-    height: 91px;
-    border: 2px solid #000;
+button, button::before{
+    width: 300px;
+    height: 69px;
 }
-
+button{
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0);
+    color: #444444;
+}
 button::before{
-   content: "Porfolio Web";
-    width: 322px;
-    height: 91px;
-    background-color: tomato;
     display: flex;
     position: relative;
-    top:-10px;
     justify-content: center;
     align-items: center;
+    top:-10px;
+    font-size: 1.3rem;
+    font-weight:bold;
     z-index: -1;
+    transition: 0.2s;
 }
-.greenButton{    
-    border: 2px solid #A958FF;
+button:hover{
+    cursor: pointer;
+}
+.greenButton{
+    border-color: #C2F587;
 }
 .pinkButton{
-    
+    border-color: #F66F92;
+}
+.purpleButton{
+    border-color: #A958FF;
 }
 
-.purpleButton{
-
+.greenButton::before{
+    background-color: #DFFFBA;
+}
+.pinkButton::before{
+    background-color: #F5CEC8;
+}
+.purpleButton::before{
+   background-color: #D6B0FF;
+}
+.greenButton:hover{
+    border:none;
+}
+.pinkButton:hover{
+    border:none;
+}
+.purpleButton:hover{
+    border:none;
+}
+.greenButton:hover::before{
+    box-shadow: 6px -6px 0px #C2F587;
+}
+.pinkButton:hover::before{
+    box-shadow: 6px -6px 0px #F66F92;
+}
+.purpleButton:hover::before{ 
+    box-shadow: 6px -6px 0px #A958FF;
 }

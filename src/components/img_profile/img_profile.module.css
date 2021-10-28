@@ -1,18 +1,27 @@
 .container{
-display: flex;
-flex-direction: column;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .profile_img{
     width: 100px;
-    height: 100px;
-    background-color: red;
     border-radius: 50%;
 }
-
 .text{
     font-weight: bold;
     color: #fff;
     text-align: center;
     font-size: 1.5rem;
+}
+.text{
+    color: #444444;
+}
+
+@media (max-width: 992px)  {
+    .text{
+        color: #ffffff;
+    }
+}
+@media (max-width: 767px) {
+    /* width: 100px; */
 }
