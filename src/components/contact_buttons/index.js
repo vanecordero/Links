@@ -7,7 +7,7 @@ import ln from "img/linkedin.svg"
 const WRITTEME= "mailto:contact@rvcordero.com?Subject=Contact via web links"
 const CALLME='tel:+1-809-217-9600'
 const TEXTME='https://api.whatsapp.com/send?phone=18092179600&text=Hello!, I have seen your contact through your links and I would love to have a meeting with you.'
-const LINK = "www.linkedin.com/in/rvco"
+const LINK = "https://www.linkedin.com/in/rvco"
 
 function ContactBtn() {
     
